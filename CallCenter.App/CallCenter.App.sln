@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CallCenter.App.ViewModels", "CallCenter.App.ViewModels\CallCenter.App.ViewModels.xproj", "{E3C1B4B1-08FA-4140-96AF-A3A7336EEC64}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CallCenter.App.WebClient", "CallCenter.App.WebClient\CallCenter.App.WebClient.xproj", "{83E37566-1B97-4439-BAB4-ED8D5212E8B5}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CallCenter.App.WebApi", "CallCenter.App.WebApi\CallCenter.App.WebApi.xproj", "{93243C4C-CF3E-4C14-824D-13A5415BDCF3}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CallCenter.App.Data", "CallCenter.App.Data\CallCenter.App.Data.xproj", "{DAFFD310-F113-4D5E-87D3-931E0CA014C6}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CallCenter.App.Entities", "CallCenter.App.Entities\CallCenter.App.Entities.xproj", "{6D5D5FC8-3AF2-4312-A7D2-3FFAA5997F9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3C1B4B1-08FA-4140-96AF-A3A7336EEC64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3C1B4B1-08FA-4140-96AF-A3A7336EEC64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3C1B4B1-08FA-4140-96AF-A3A7336EEC64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3C1B4B1-08FA-4140-96AF-A3A7336EEC64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83E37566-1B97-4439-BAB4-ED8D5212E8B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83E37566-1B97-4439-BAB4-ED8D5212E8B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83E37566-1B97-4439-BAB4-ED8D5212E8B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83E37566-1B97-4439-BAB4-ED8D5212E8B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93243C4C-CF3E-4C14-824D-13A5415BDCF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93243C4C-CF3E-4C14-824D-13A5415BDCF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93243C4C-CF3E-4C14-824D-13A5415BDCF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93243C4C-CF3E-4C14-824D-13A5415BDCF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAFFD310-F113-4D5E-87D3-931E0CA014C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAFFD310-F113-4D5E-87D3-931E0CA014C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAFFD310-F113-4D5E-87D3-931E0CA014C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAFFD310-F113-4D5E-87D3-931E0CA014C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D5D5FC8-3AF2-4312-A7D2-3FFAA5997F9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D5D5FC8-3AF2-4312-A7D2-3FFAA5997F9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D5D5FC8-3AF2-4312-A7D2-3FFAA5997F9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D5D5FC8-3AF2-4312-A7D2-3FFAA5997F9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

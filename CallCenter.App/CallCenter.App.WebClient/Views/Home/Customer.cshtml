@@ -1,0 +1,45 @@
+﻿@model CallCenter.App.ViewModels.CustomerViewModel
+@{
+    ViewData["Title"] = "About";
+}
+
+@section scripts {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}
+
+<h2>@ViewData["Title"].</h2>
+<h3>@ViewData["Message"]</h3>
+
+<form method="post">
+    <div asp-validation-summary="ModelOnly"></div>
+    @if (ViewBag.UserMessage != null)
+            {
+        <div>@ViewBag.UserMessage</div>
+    }
+    <div class="form-group">
+        <label asp-for="Name">Name</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-muted"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Surname">Name</label>
+        <input asp-for="Surname" class="form-control" />
+        <span asp-validation-for="Surname" class="text-muted"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Surname">Name</label>
+        <input asp-for="Surname" class="form-control" />
+        <span asp-validation-for="Surname" class="text-muted"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Phone">Email</label>
+        <input asp-for="Phone" type="email" class="form-control" />
+        <span asp-validation-for="Phone" class="text-muted"></span>
+    </div>
+    <div class="form-group">
+        <a asp-controller="Home" asp-action="Index" class="btn btn-default">Cancel</a>
+        <input type="submit" value="Send Message" class="btn btn-success" />
+    </div>
+</form>
+
