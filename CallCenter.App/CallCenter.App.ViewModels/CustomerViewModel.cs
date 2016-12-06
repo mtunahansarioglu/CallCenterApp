@@ -8,6 +8,7 @@ namespace CallCenter.App.ViewModels
 {
     public class CustomerViewModel
     {
+
         [Required]
         public string Name { get; set; }
 

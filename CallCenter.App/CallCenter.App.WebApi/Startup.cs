@@ -10,6 +10,9 @@ using Microsoft.Extensions.Logging;
 using CallCenter.App.Data;
 using CallCenter.App.Data.Seed;
 using CallCenter.App.Data.Repository;
+using AutoMapper;
+using CallCenter.App.Entities;
+using CallCenter.App.ViewModels;
 
 namespace CallCenter.App.WebApi
 {
@@ -55,6 +58,11 @@ namespace CallCenter.App.WebApi
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
+
+            Mapper.Initialize(config=>
+            {
+                config.CreateMap<CustomerViewModel, Customer>().ReverseMap();
+            });
 
             app.UseApplicationInsightsRequestTelemetry();
 

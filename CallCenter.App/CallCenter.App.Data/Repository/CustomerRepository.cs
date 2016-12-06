@@ -15,9 +15,34 @@ namespace CallCenter.App.Data.Repository
             _context = context;
         }
 
-        public IEnumerable<Customer> GetAllCustomers()
+        public void Add(Customer customer)
+        {
+            _context.Add(customer);
+        }
+
+        public void Delete(Customer customer)
+        {
+            _context.Remove(customer);
+        }
+
+        public IEnumerable<Customer> GetAll()
         {
             return _context.Customers.ToList();
+        }
+
+        public Customer Find(int id)
+        {
+            return _context.Customers.Single(t => t.Id == id);
+        }
+
+        public async Task<bool> SaveChangesAsync()
+        {
+            return (await _context.SaveChangesAsync()) > 0;
+        }
+
+        public void Update(Customer customer)
+        {
+            _context.Customers.Update(customer);
         }
     }
 }
